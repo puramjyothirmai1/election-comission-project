@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Election Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+</head>
+
+<body>
+    <div class="header">
+        <a class="logo">ELECTION COMMISSION</a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="subnav">
+            <button class="subnavbtn">Party</button>
+            <div class="subnav-content">
+                <a href="party.html">New</a>
+                <a href="party2.php">Display</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Constituencies</button>
+            <div class="subnav-content">
+                <a href="area.html">New</a>
+                <a href="area2.php">Display</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Candidates</button>
+            <div class="subnav-content">
+                <a href="candidate.html">New</a>
+                <a href="candidate2.php">Display</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <a href="votenow.html">Vote Now</a>
+            21
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Results</button>
+            <div class="subnav-content">
+                <a href="results.php">Show Results</a>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+    <br /><br />
+
+    <div class="bg-image">
+        <section>
+            <img class="mySlides" class="centre" src="vote4.jpg" alt="vote4 " style="width:100%">
+            <img class="mySlides" class="centre" src="vote5.jpg" alt="vote5" style="width:100%">
+            <img class="mySlides" class="centre" src="vote1.jpg" alt="vote1" style="width:100%">
+            <img class="mySlides" src="vote3.jpg" class="centre" alt="vote3" style="width:100%">
+        </section>
+    </div>
+    <div class="bg-text">
+        <h1><b>Welcome to the Election Website!!</b></h1>
+        <p>Please visit all the menus and experiment.</p>
+        <p>Experience the realistic election process by viewing the parties and
+            constituencies contesting.</p>
+        <p>Just like a real election, cast your vote to your preferred candidat
+            e.</p>
+        <p>View the results after the counting process.</p>
+    </div>
+
+    <script type="text/javascript">
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1; }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 6000);
+        }
+    </script>
+</body>
+
+</html>

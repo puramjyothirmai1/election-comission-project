@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VOTE NOW!!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="contacts.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <style>
+        body {
+            background-image: url("vote6.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a class="logo">ELECTION COMMISSION</a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="subnav">
+            <button class="subnavbtn">Party</button>
+            <div class="subnav-content">
+                <a href="party.html">New</a>
+                <a href="party2.php">Display</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Constituencies</button>
+            <div class="subnav-content">
+                <a href="area.html">New</a>
+                <a href="area2.php">Display</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Candidates</button>
+            <div class="subnav-content">
+                <a href="candidate.html">New</a>
+                <a href="candidate2.php">Display</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <a href="votenow.html">Vote Now</a>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Results</button>
+            <div class="subnav-content">
+                <a href="results.php">Show Results</a>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+    <br /><br />
+
+    <div align="center">
+        <div class="container">
+            <h1 align="center">Enter the voter details...</h1>
+            <form method="post" action="voter.php">
+                <table align="center" width="75%">
+                    <tr>
+                        <th> Voter No:</th>
+                        <td><input type="number" placeholder="vote number" name="vno" /></td>
+                    </tr>
+                    <tr>
+                        <th> Voter Name:</th>
+                        <td><input type="text" name="vname" placeholder="Voter Name" /></td><br />
+                    </tr>
+                    <tr>
+                        <th> Age:</th>
+                        <td><input type="number" placeholder="age" name="age" /><br /></td>
+                    </tr>
+                    <tr>
+                        <th> Relation Name:</th>
+                        <td><input type="text" name="relname" placeholder="Relation Name" /></td><br />
+
+                    </tr>
+                    <tr>
+                        <th> Area Number:</th>
+                        <td><input type="number" placeholder="area number" name="ano" /></td>
+                    </tr>
+                    <tr>
+                        <th> Party Voted For:</th>
+                        <td><input type="text" name="pname" placeholder="Name of Party" /></td><br />
+
+                    </tr>
+
+
+                </table>
+                <input type="hidden" name="form_submitted" value="1" />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

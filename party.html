@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Party</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="contacts.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <style>
+        body {
+            background-image: url("party back.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a class="logo">ELECTION COMMISSION</a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="subnav">
+            <button class="subnavbtn">Party</button>
+            <div class="subnav-content">
+
+                <a href="party.html">New</a>
+                <a href="party2.php">Display</a>
+                <a href="query.php">Query</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Constituencies</button>
+            <div class="subnav-content">
+                <a href="area.html">New</a>
+                <a href="area2.php">Display</a>
+
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Candidates</button>
+            <div class="subnav-content">
+                <a href="candidate.html">New</a>
+                <a href="candidate2.php">Display</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <a href="votenow.html">Vote Now</a>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Results</button>
+            <div class="subnav-content">
+                <a href="results.php">Show Results</a>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+    <br /><br />
+
+    <div align="center">
+        <div class="container">
+            <h1 align="center">Enter the party details...</h1>
+            <form name="myform" method="post" action="party1.php" onsubmit="return validateform()">
+                <table align="center" width="75%">
+                    <tr>
+                        <th> Party No:</th>
+                        <td><input type="number" name="pno" /></td>
+                    </tr>
+                    <tr>
+                        <th> Party Name:</th>
+                        <td><input type="text" name="pname" placeholder="Party name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th> Party Head:</th>
+                        <td><input type="text" name="phead" placeholder="Party Head" />
+                        </td>
+                    </tr></br>
+                    </td>
+
+
+                    </tr>
+                </table>
+
+                <input type="hidden" name="form_submitted" value="1" />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateform() {
+            var name = document.myform.pname.value;
+            var lastname = document.myform.phead.value;
+
+            if (name == null || name == "") {
+                alert("party Name can't be blank");
+                return false;
+            } else if (lastname == null || lastname == "") {
+                alert("party head can't be blank");
+                return false;
+            }
+        }</script>
+
+</body>
+
+</html>
